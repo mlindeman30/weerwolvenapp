@@ -10,7 +10,7 @@ interface Props {
 }
 
 export function PersonageDetail({ personage: p, onOpen }: Props) {
-  const rol = p.rolId ? rolPerId.get(p.rolId) : undefined
+  const rollen = p.rolIds.flatMap((id) => rolPerId.get(id) ?? [])
   const titel = p.naam ?? p.rol ?? 'Onbekend'
   return (
     <>
@@ -22,20 +22,25 @@ export function PersonageDetail({ personage: p, onOpen }: Props) {
           {p.thema ?? 'Geen thema'} <AllianceBadge alliantie={p.alliantie} />
         </p>
         {p.alliantieTekst && <p className="item-meta">Alliantie: {p.alliantieTekst}</p>}
-        {rol && (
+        {rollen.length > 0 && (
           <p className="item-verwijzing">
             Variant van{' '}
-            <a
-              href={hrefRol(rol.id)}
-              onClick={(e) => {
-                if (isGewoneKlik(e)) {
-                  e.preventDefault()
-                  onOpen(hrefRol(rol.id))
-                }
-              }}
-            >
-              {rol.naam}
-            </a>
+            {rollen.map((rol, i) => (
+              <span key={rol.id}>
+                {i > 0 && (i === rollen.length - 1 ? ' en ' : ', ')}
+                <a
+                  href={hrefRol(rol.id)}
+                  onClick={(e) => {
+                    if (isGewoneKlik(e)) {
+                      e.preventDefault()
+                      onOpen(hrefRol(rol.id))
+                    }
+                  }}
+                >
+                  {rol.naam}
+                </a>
+              </span>
+            ))}
           </p>
         )}
       </header>

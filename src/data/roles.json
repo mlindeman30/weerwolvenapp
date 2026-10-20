@@ -8,8 +8,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-bankketbakker",
@@ -19,10 +18,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-uitwerking-banketbakker"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-berouwvolle-wolf",
@@ -32,8 +28,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-beschermengel",
@@ -43,11 +38,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-leah-stardew-valley",
-        "pers-xander-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-beul",
@@ -57,11 +48,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-marlon-stardew-valley",
-        "pers-uitwerking-beul"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-beulwolf",
@@ -71,8 +58,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-bolle-gijs",
@@ -82,8 +68,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-bountyhunter",
@@ -93,11 +78,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-june-avatar",
-        "pers-dawn-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-bureaucraat",
@@ -107,8 +88,7 @@
       "krachten": "Je mag voor elke lynch deadline een speler kiezen en hiervan zeggen of die een extra stem of een min stem krijgt.",
       "winconditie": "Wint als alle levende spelers winnen met goed.",
       "nieuw": true,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-burger",
@@ -118,8 +98,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-charizard",
@@ -129,8 +108,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-cipier",
@@ -140,10 +118,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-riley-finn-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-conversiewolf",
@@ -153,10 +128,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-darla-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-copycat",
@@ -166,8 +138,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-croupier",
@@ -177,8 +148,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-cupido",
@@ -188,10 +158,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-jodi-stardew-valley"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-de-straatartiest",
@@ -201,8 +168,7 @@
       "krachten": "Wanneer in het spel, wordt dit bekend gemaakt in de krant en de andere spelers worden aangemoedigd om te helpen jou te beschermen. Je kan voor de eerste deadline, de derde en de vijfde deadline, 3 spelers met een alliantie insturen in de ON Ik juggle: ..... Je krijgt te horen hoeveel spelers je correct had Dit bericht hoef je niet te nummeren.",
       "winconditie": "Wint als alle levende spelers winnen met goed.",
       "nieuw": true,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-dief",
@@ -212,8 +178,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-diplomaat",
@@ -223,10 +188,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-cordelia-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-dokter-weerwolf",
@@ -236,8 +198,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-dorpoudste",
@@ -247,8 +208,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-dorpsgek",
@@ -258,10 +218,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-leo-stardew-valley"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-dwaas",
@@ -271,8 +228,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-edelman",
@@ -282,8 +238,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-fluitspeler",
@@ -293,8 +248,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-francofoob",
@@ -304,8 +258,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-genezer",
@@ -315,8 +268,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-geinfecteerde-burger",
@@ -326,8 +278,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-glurende-buurvrouw",
@@ -337,8 +288,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-gnome",
@@ -348,10 +298,7 @@
       "krachten": "In eerste instantie zal je gezien worden als neutraal, maar jij weet dat dat niet helemaal klopt. Een keer in het spel kan je aan de spelleiding laten weten voor lunch 3 aan welke speler jij gelinkt wilt worden voor je alliantie.\nDie speler krijgt dat dan te horen. Kies je voor die tijd niets dan zal de spelleiding random voor jou kiezen en krijg je te horen wie het is.",
       "winconditie": "Wint met de alliantie van de gekozen speler mee.",
       "nieuw": true,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-krobus-stardew-valley"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-gokker",
@@ -361,8 +308,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-grafdelver",
@@ -372,8 +318,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-handelaar",
@@ -383,10 +328,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-anya-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-heks",
@@ -396,10 +338,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-jenny-calendar-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-hexproof-weerwolf",
@@ -409,8 +348,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-huidenwisselaar",
@@ -420,8 +358,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-hybride-weerwolf",
@@ -431,8 +368,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-ijzeren-hein",
@@ -444,9 +380,6 @@
       "nieuw": true,
       "aanTeVullen": [
         "omschrijving"
-      ],
-      "varianten": [
-        "pers-george-stardew-valley"
       ]
     },
     {
@@ -457,12 +390,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-gil-stardew-valley",
-        "pers-kendra-buffy",
-        "pers-uitwerking-jager"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-kameleon",
@@ -472,8 +400,17 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
+    },
+    {
+      "id": "rol-kapitein",
+      "naam": "Kapitein",
+      "omschrijving": "Je kan 1 aantal keer in het spel de captain chat openen om een kort overleg te hebben met de andere captains in het spel. Deze chat is open van deadline tot deadline.",
+      "alliantie": null,
+      "krachten": "",
+      "winconditie": "",
+      "nieuw": true,
+      "aanTeVullen": []
     },
     {
       "id": "rol-ketterwolf",
@@ -483,11 +420,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-heks-stardew-valley",
-        "pers-spike-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-kettingwelp",
@@ -497,8 +430,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-kletsmajoor",
@@ -508,8 +440,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-klokkenluider",
@@ -519,8 +450,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-leugenwolf",
@@ -530,8 +460,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-mad-hatter",
@@ -541,8 +470,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-medium",
@@ -552,8 +480,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-meeprater",
@@ -563,8 +490,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-nachtwaker",
@@ -574,8 +500,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-necromancer-weerwolf",
@@ -585,8 +510,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-orakel",
@@ -596,8 +520,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-plaaggeest",
@@ -607,10 +530,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-alex-stardew-valley"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-priester",
@@ -620,10 +540,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-evelyn-stardew-valley"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-prins",
@@ -633,8 +550,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-rechter",
@@ -644,8 +560,7 @@
       "krachten": "Je mag één keer voor de lynchdeadline een veto uitspreken. Je moet dan ook een speler kiezen. Deze zal gelyncht worden ipv degene met de meeste stemmen en er zal in de krant staan dat er een veto is uitgesproken.",
       "winconditie": "Wint als alle levende spelers winnen met goed.",
       "nieuw": true,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-relatiewolf",
@@ -655,8 +570,7 @@
       "krachten": "Je zit in de wolvenchat en je kan namens de wolven lunchen. De laatst geldig ingestuurde lunch namens de wolven voor de deadline telt. Zo snel als mogelijk is geef na het verkrijgen van deze rol, maar voor de eerste deadline 3 namen door om een relatie mee te gaan vormen. Dit kunnen geen mede wolven zijn. Na de eerste deadline krijg je een subchat met een van deze mensen. Je mag je rol niet delen met je mede wolven. Je zal gezien worden als normale weerwolf.",
       "winconditie": "Wint als alle levende spelers winnen met slecht.",
       "nieuw": true,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-ridder",
@@ -666,8 +580,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-roddeltante",
@@ -677,8 +590,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-roedelleider",
@@ -688,10 +600,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-the-master-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-samaritaan",
@@ -701,8 +610,7 @@
       "krachten": "Je kunt 's nachts een speler selecteren om die te beschermen. Als jij of die speler wordt aangevallen zal geen van beiden doodgaan, in plaats daarvan zullen jij en je aanvaller elkaars rol zien. Omdat je gewond bent zul je doodgaan aan het einde van de dag.",
       "winconditie": "Wint als alle levende winnen met goed",
       "nieuw": true,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-seriemoordenaar",
@@ -712,8 +620,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-sjamaan",
@@ -723,10 +630,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-mayor-wilkins-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-slapende-weerwolf",
@@ -736,10 +640,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-mr-qi-stardew-valley"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-slet",
@@ -749,11 +650,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-haley-stardew-valley",
-        "pers-uitwerking-slet"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-sollicitatiewolf",
@@ -763,8 +660,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-spiekend-meisje",
@@ -774,10 +670,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-caroline-stardew-valley"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-stemmenteller",
@@ -787,8 +680,7 @@
       "krachten": "Je kan 1 keer in het spel vragen hoeveel goedjes op de lynch target hebben gestemt.",
       "winconditie": "Wint als alle levende spelers winnen met goed.",
       "nieuw": true,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-stickymonster",
@@ -798,8 +690,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-stoorwolf",
@@ -809,10 +700,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-drusilla-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-stoorzender",
@@ -822,10 +710,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-principle-snyder-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-storyteller",
@@ -835,10 +720,7 @@
       "krachten": "Voor elke deadline kan je ervoor kiezen om iemand tijdelijk uit het spel te halen door ze te smiten. Je kan niet dezelfde speler binnen 4 deadlines van elkaar kiezen. De acties en lynch stem van deze speler doen voor 1 deadline niet mee, ook gaan alle acties op deze persoon niet door inclusief lynch en lunch. Dit kan pas na de eerste deadline",
       "winconditie": "Wint als alle levende spelers winnen met goed.",
       "nieuw": true,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-uitwerking-de-tekenaar"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-telemarketeer",
@@ -848,8 +730,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-toneelspeler",
@@ -859,8 +740,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-twilight-man",
@@ -870,8 +750,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-vals-adel",
@@ -881,8 +760,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-valse-engel",
@@ -892,10 +770,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-uitwerking-valse-engel"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-vervloekte",
@@ -905,11 +780,7 @@
       "krachten": "Wanneer jij geluncht wordt, zal je niet sterven, maar weerwolf worden. Als dit in dezelfde nacht gebeurt als dat je bekeken wordt, word je die nacht nog als je oude rol gezien.",
       "winconditie": "Wint als alle levende spelers winnen met goed, of als het community center gerestaureerd is.",
       "nieuw": true,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-demitrius-stardew-valley",
-        "pers-harmony-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-virgin",
@@ -921,9 +792,6 @@
       "nieuw": true,
       "aanTeVullen": [
         "omschrijving"
-      ],
-      "varianten": [
-        "pers-elliot-stardew-valley"
       ]
     },
     {
@@ -934,8 +802,7 @@
       "krachten": "Je kunt 2 keer in het spel ervoorzorgen dat alleen het dodenrijk kan stemmen. Hierdoor zullen alleen de stemmen uit het dodenrijk gelden. Er komt in de krant te staan dat je dit hebt geactiveerd",
       "winconditie": "Wint als alle levende winnen met goed",
       "nieuw": true,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-waarzegster",
@@ -945,8 +812,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-wapenmeester",
@@ -956,8 +822,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-weerhamster",
@@ -967,11 +832,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-linus-stardew-valley",
-        "pers-uitwerking-weerhamster"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-weerwolf",
@@ -981,12 +842,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-henchmen-stardew-valley",
-        "pers-shadow-shaman-stardew-valley",
-        "pers-uitwerking-weerwolf"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-welp",
@@ -996,11 +852,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-bouncer-stardew-valley",
-        "pers-the-anointed-one-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-wisselaar",
@@ -1010,8 +862,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-witte-welp",
@@ -1021,8 +872,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-witte-wolf",
@@ -1032,10 +882,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-wizard-m-rasmodius-stardew-valley"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-wolfmens",
@@ -1045,10 +892,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-oz-buffy"
-      ]
+      "aanTeVullen": []
     },
     {
       "id": "rol-wolven-groupie",
@@ -1058,8 +902,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-yakuzawolf",
@@ -1069,8 +912,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": []
+      "aanTeVullen": []
     },
     {
       "id": "rol-ziener",
@@ -1080,11 +922,7 @@
       "krachten": "",
       "winconditie": "",
       "nieuw": false,
-      "aanTeVullen": [],
-      "varianten": [
-        "pers-emily-stardew-valley",
-        "pers-uitwerking-ziener"
-      ]
+      "aanTeVullen": []
     }
   ],
   "personages": [
@@ -1092,7 +930,7 @@
       "id": "pers-aang-avatar",
       "naam": "Aang",
       "rol": "Airbender Avatar",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1106,7 +944,7 @@
       "id": "pers-katara-avatar",
       "naam": "Katara",
       "rol": "Waterbender",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1120,7 +958,10 @@
       "id": "pers-sokka-avatar",
       "naam": "Sokka",
       "rol": "Strijder",
-      "rolId": null,
+      "rolIds": [
+        "rol-beschermengel",
+        "rol-cupido"
+      ],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1134,7 +975,9 @@
       "id": "pers-toph-beifong-avatar",
       "naam": "Toph Beifong",
       "rol": "Earthbender",
-      "rolId": null,
+      "rolIds": [
+        "rol-cipier"
+      ],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1148,7 +991,7 @@
       "id": "pers-uncle-iroh-avatar",
       "naam": "Uncle Iroh",
       "rol": "Berouwvolle firebender",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1162,7 +1005,9 @@
       "id": "pers-hakoda-avatar",
       "naam": "Hakoda",
       "rol": "Southern Water Tribe leider",
-      "rolId": null,
+      "rolIds": [
+        "rol-wapenmeester"
+      ],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1176,7 +1021,10 @@
       "id": "pers-suki-avatar",
       "naam": "Suki",
       "rol": "Kyoshi krijger",
-      "rolId": null,
+      "rolIds": [
+        "rol-orakel",
+        "rol-cupido"
+      ],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1190,7 +1038,7 @@
       "id": "pers-guru-pathik-avatar",
       "naam": "Guru Pathik",
       "rol": "Guru",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1204,7 +1052,7 @@
       "id": "pers-kool-verkoper-avatar",
       "naam": "Kool verkoper",
       "rol": "Verkoper",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1218,7 +1066,7 @@
       "id": "pers-dock-xu-bushi-avatar",
       "naam": "Dock / Xu / Bushi",
       "rol": "Chaotic",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1232,7 +1080,9 @@
       "id": "pers-appa-avatar",
       "naam": "Appa",
       "rol": "Vliegende Bizon",
-      "rolId": null,
+      "rolIds": [
+        "rol-huidenwisselaar"
+      ],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1246,7 +1096,9 @@
       "id": "pers-momo-avatar",
       "naam": "Momo",
       "rol": "Vliegende Maki",
-      "rolId": null,
+      "rolIds": [
+        "rol-medium"
+      ],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1260,7 +1112,7 @@
       "id": "pers-pakku-avatar",
       "naam": "Pakku",
       "rol": "Waterbender meester",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1274,7 +1126,9 @@
       "id": "pers-jeong-jeong-avatar",
       "naam": "Jeong Jeong",
       "rol": "Firebender general",
-      "rolId": null,
+      "rolIds": [
+        "rol-dorpoudste"
+      ],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1288,7 +1142,9 @@
       "id": "pers-princes-yue-avatar",
       "naam": "Princes Yue",
       "rol": "Noordelijke waterstam princes",
-      "rolId": null,
+      "rolIds": [
+        "rol-weerhamster"
+      ],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1302,7 +1158,9 @@
       "id": "pers-teo-avatar",
       "naam": "Teo",
       "rol": "Uitvinder",
-      "rolId": null,
+      "rolIds": [
+        "rol-bountyhunter"
+      ],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1316,7 +1174,7 @@
       "id": "pers-king-bumi-avatar",
       "naam": "King Bumi",
       "rol": "Witte Lotus leider",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -1330,7 +1188,7 @@
       "id": "pers-zuko-avatar",
       "naam": "Zuko",
       "rol": "Firebender",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -1344,7 +1202,7 @@
       "id": "pers-long-feng-avatar",
       "naam": "Long Feng",
       "rol": "Dai Li leider",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -1358,7 +1216,9 @@
       "id": "pers-jet-avatar",
       "naam": "Jet",
       "rol": "Rebellen leider",
-      "rolId": null,
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": "Avatar",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -1372,7 +1232,7 @@
       "id": "pers-hei-bai-avatar",
       "naam": "Hei Bai",
       "rol": "Forest Spirit",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -1386,7 +1246,7 @@
       "id": "pers-wan-shi-tong-avatar",
       "naam": "Wan Shi Tong",
       "rol": "Knowledge Spirit",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -1400,7 +1260,9 @@
       "id": "pers-azula-avatar",
       "naam": "Azula",
       "rol": "Firebender",
-      "rolId": null,
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": "Avatar",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1414,7 +1276,7 @@
       "id": "pers-lord-ozai-avatar",
       "naam": "Lord Ozai",
       "rol": "Fire Lord",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1428,7 +1290,10 @@
       "id": "pers-mai-avatar",
       "naam": "Mai",
       "rol": "Messen gooier",
-      "rolId": null,
+      "rolIds": [
+        "rol-beulwolf",
+        "rol-weerwolf"
+      ],
       "thema": "Avatar",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1442,7 +1307,10 @@
       "id": "pers-ty-lee-avatar",
       "naam": "Ty Lee",
       "rol": "Chi blocker",
-      "rolId": null,
+      "rolIds": [
+        "rol-stoorwolf",
+        "rol-weerwolf"
+      ],
       "thema": "Avatar",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1456,7 +1324,7 @@
       "id": "pers-combustion-man-avatar",
       "naam": "Combustion Man",
       "rol": "Mercenary",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1470,7 +1338,7 @@
       "id": "pers-koh-the-face-stealer-avatar",
       "naam": "Koh the Face stealer",
       "rol": "Spirit",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Avatar",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1484,7 +1352,9 @@
       "id": "pers-admiraal-zhao-avatar",
       "naam": "Admiraal Zhao",
       "rol": "Admiraal van de Fire Nation",
-      "rolId": null,
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": "Avatar",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1498,7 +1368,9 @@
       "id": "pers-june-avatar",
       "naam": "June",
       "rol": "Bountyhunter",
-      "rolId": "rol-bountyhunter",
+      "rolIds": [
+        "rol-bountyhunter"
+      ],
       "thema": "Avatar",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1512,7 +1384,9 @@
       "id": "pers-kanna-avatar",
       "naam": "Kanna",
       "rol": "Gran-Gran",
-      "rolId": null,
+      "rolIds": [
+        "rol-dorpsgek"
+      ],
       "thema": "Avatar",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1526,7 +1400,7 @@
       "id": "pers-xxxx-stardew-valley",
       "naam": "xxxx",
       "rol": "De boer(in)",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -1542,7 +1416,9 @@
       "id": "pers-elliot-stardew-valley",
       "naam": "Elliot",
       "rol": "Virgin",
-      "rolId": "rol-virgin",
+      "rolIds": [
+        "rol-virgin"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1556,7 +1432,9 @@
       "id": "pers-emily-stardew-valley",
       "naam": "Emily",
       "rol": "Ziener",
-      "rolId": "rol-ziener",
+      "rolIds": [
+        "rol-ziener"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1570,7 +1448,9 @@
       "id": "pers-haley-stardew-valley",
       "naam": "Haley",
       "rol": "Slet",
-      "rolId": "rol-slet",
+      "rolIds": [
+        "rol-slet"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1584,7 +1464,7 @@
       "id": "pers-shane-stardew-valley",
       "naam": "Shane",
       "rol": "Kippenhouder",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1598,7 +1478,9 @@
       "id": "pers-demitrius-stardew-valley",
       "naam": "Demitrius",
       "rol": "Vervloekte",
-      "rolId": "rol-vervloekte",
+      "rolIds": [
+        "rol-vervloekte"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1612,7 +1494,9 @@
       "id": "pers-jodi-stardew-valley",
       "naam": "Jodi",
       "rol": "Cupido",
-      "rolId": "rol-cupido",
+      "rolIds": [
+        "rol-cupido"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1626,7 +1510,7 @@
       "id": "pers-willy-stardew-valley",
       "naam": "Willy",
       "rol": "Visser",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1640,7 +1524,7 @@
       "id": "pers-lewis-stardew-valley",
       "naam": "Lewis",
       "rol": "Burgemeester",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1654,7 +1538,9 @@
       "id": "pers-gil-stardew-valley",
       "naam": "Gil",
       "rol": "Jager",
-      "rolId": "rol-jager",
+      "rolIds": [
+        "rol-jager"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1668,7 +1554,7 @@
       "id": "pers-gunther-stardew-valley",
       "naam": "Gunther",
       "rol": "Wijze burger",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1682,7 +1568,9 @@
       "id": "pers-pam-stardew-valley",
       "naam": "Pam",
       "rol": "De dronkaard",
-      "rolId": null,
+      "rolIds": [
+        "rol-valse-engel"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1696,7 +1584,7 @@
       "id": "pers-pierre-stardew-valley",
       "naam": "Pierre",
       "rol": "Winkeleigenaar",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1710,7 +1598,9 @@
       "id": "pers-marlon-stardew-valley",
       "naam": "Marlon",
       "rol": "Beul",
-      "rolId": "rol-beul",
+      "rolIds": [
+        "rol-beul"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1724,7 +1614,9 @@
       "id": "pers-krobus-stardew-valley",
       "naam": "Krobus",
       "rol": "Gnome",
-      "rolId": "rol-gnome",
+      "rolIds": [
+        "rol-gnome"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Gelinkt",
       "alliantieTekst": "Van de aan jou gelinkte speler",
@@ -1738,7 +1630,7 @@
       "id": "pers-grootvader-stardew-valley",
       "naam": "Grootvader",
       "rol": "Geest",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -1752,7 +1644,7 @@
       "id": "pers-gouveneur-stardew-valley",
       "naam": "Gouveneur",
       "rol": "Gouveneur",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -1766,7 +1658,9 @@
       "id": "pers-henchmen-stardew-valley",
       "naam": "Henchmen",
       "rol": "Weerwolf",
-      "rolId": "rol-weerwolf",
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1780,7 +1674,9 @@
       "id": "pers-mr-qi-stardew-valley",
       "naam": "Mr Qi",
       "rol": "Slapende Weerwolf",
-      "rolId": "rol-slapende-weerwolf",
+      "rolIds": [
+        "rol-slapende-weerwolf"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1794,7 +1690,9 @@
       "id": "pers-morris-stardew-valley",
       "naam": "Morris",
       "rol": "Lijstjesweerwolf",
-      "rolId": null,
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1808,7 +1706,9 @@
       "id": "pers-fizz-stardew-valley",
       "naam": "Fizz",
       "rol": "Wolf in Schaapskleren",
-      "rolId": null,
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1822,7 +1722,9 @@
       "id": "pers-heks-stardew-valley",
       "naam": "Heks",
       "rol": "Ketterwolf",
-      "rolId": "rol-ketterwolf",
+      "rolIds": [
+        "rol-ketterwolf"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1836,7 +1738,9 @@
       "id": "pers-mummy-stardew-valley",
       "naam": "Mummy",
       "rol": "Mummy Wolf",
-      "rolId": null,
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -1850,7 +1754,7 @@
       "id": "pers-uitwerking-waakhond-kat-stardew-valley",
       "naam": null,
       "rol": "Waakhond/kat",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1864,7 +1768,9 @@
       "id": "pers-harvey-stardew-valley",
       "naam": "Harvey",
       "rol": "Dokter",
-      "rolId": null,
+      "rolIds": [
+        "rol-heks"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1878,7 +1784,9 @@
       "id": "pers-penny-stardew-valley",
       "naam": "Penny",
       "rol": "Lerares",
-      "rolId": null,
+      "rolIds": [
+        "rol-roddeltante"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1892,7 +1800,7 @@
       "id": "pers-maru-stardew-valley",
       "naam": "Maru",
       "rol": "Onderzoeker",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1906,7 +1814,9 @@
       "id": "pers-alex-stardew-valley",
       "naam": "Alex",
       "rol": "Plaaggeest",
-      "rolId": "rol-plaaggeest",
+      "rolIds": [
+        "rol-plaaggeest"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1920,7 +1830,9 @@
       "id": "pers-leah-stardew-valley",
       "naam": "Leah",
       "rol": "Beschermengel",
-      "rolId": "rol-beschermengel",
+      "rolIds": [
+        "rol-beschermengel"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1934,7 +1846,7 @@
       "id": "pers-sebastian-stardew-valley",
       "naam": "Sebastian",
       "rol": "Bandmate",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1950,7 +1862,7 @@
       "id": "pers-sam-stardew-valley",
       "naam": "Sam",
       "rol": "Bandmate",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1966,7 +1878,7 @@
       "id": "pers-abigail-stardew-valley",
       "naam": "Abigail",
       "rol": "Bandmate",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1982,7 +1894,9 @@
       "id": "pers-caroline-stardew-valley",
       "naam": "Caroline",
       "rol": "Spiekend Meisje",
-      "rolId": "rol-spiekend-meisje",
+      "rolIds": [
+        "rol-spiekend-meisje"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -1996,7 +1910,9 @@
       "id": "pers-evelyn-stardew-valley",
       "naam": "Evelyn",
       "rol": "Priester",
-      "rolId": "rol-priester",
+      "rolIds": [
+        "rol-priester"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2010,7 +1926,9 @@
       "id": "pers-george-stardew-valley",
       "naam": "George",
       "rol": "IJzeren Hein",
-      "rolId": "rol-ijzeren-hein",
+      "rolIds": [
+        "rol-ijzeren-hein"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2024,7 +1942,9 @@
       "id": "pers-gus-stardew-valley",
       "naam": "Gus",
       "rol": "Barman",
-      "rolId": null,
+      "rolIds": [
+        "rol-diplomaat"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2038,7 +1958,9 @@
       "id": "pers-jas-stardew-valley",
       "naam": "Jas",
       "rol": "Geliefden",
-      "rolId": null,
+      "rolIds": [
+        "rol-cupido"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2052,7 +1974,9 @@
       "id": "pers-leo-stardew-valley",
       "naam": "Leo",
       "rol": "Dorpsgek",
-      "rolId": "rol-dorpsgek",
+      "rolIds": [
+        "rol-dorpsgek"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2066,7 +1990,9 @@
       "id": "pers-linus-stardew-valley",
       "naam": "Linus",
       "rol": "Weerhamster",
-      "rolId": "rol-weerhamster",
+      "rolIds": [
+        "rol-weerhamster"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2080,7 +2006,9 @@
       "id": "pers-vincent-stardew-valley",
       "naam": "Vincent",
       "rol": "Geliefden",
-      "rolId": null,
+      "rolIds": [
+        "rol-cupido"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2094,7 +2022,7 @@
       "id": "pers-kent-stardew-valley",
       "naam": "Kent",
       "rol": "Mythomaan",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Stardew Valley",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -2108,7 +2036,9 @@
       "id": "pers-wizard-m-rasmodius-stardew-valley",
       "naam": "Wizard M. Rasmodius",
       "rol": "Witte Wolf",
-      "rolId": "rol-witte-wolf",
+      "rolIds": [
+        "rol-witte-wolf"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -2122,7 +2052,9 @@
       "id": "pers-bouncer-stardew-valley",
       "naam": "Bouncer",
       "rol": "Welp",
-      "rolId": "rol-welp",
+      "rolIds": [
+        "rol-welp"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2136,7 +2068,9 @@
       "id": "pers-shadow-shaman-stardew-valley",
       "naam": "Shadow Shaman",
       "rol": "Weerwolf",
-      "rolId": "rol-weerwolf",
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": "Stardew Valley",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2150,7 +2084,7 @@
       "id": "pers-buffy-buffy",
       "naam": "Buffy",
       "rol": "Slayer (burgemeester)",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2164,7 +2098,9 @@
       "id": "pers-xander-buffy",
       "naam": "Xander",
       "rol": "Beschermengel",
-      "rolId": "rol-beschermengel",
+      "rolIds": [
+        "rol-beschermengel"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2178,7 +2114,9 @@
       "id": "pers-willow-buffy",
       "naam": "Willow",
       "rol": "Ziener koppel",
-      "rolId": null,
+      "rolIds": [
+        "rol-ziener"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2192,7 +2130,9 @@
       "id": "pers-rupert-giles-buffy",
       "naam": "Rupert Giles",
       "rol": "Librarian",
-      "rolId": null,
+      "rolIds": [
+        "rol-dorpsgek"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2206,7 +2146,9 @@
       "id": "pers-tara-buffy",
       "naam": "Tara",
       "rol": "Ziener koppel",
-      "rolId": null,
+      "rolIds": [
+        "rol-ziener"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2220,7 +2162,9 @@
       "id": "pers-cordelia-buffy",
       "naam": "Cordelia",
       "rol": "Diplomaat",
-      "rolId": "rol-diplomaat",
+      "rolIds": [
+        "rol-diplomaat"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2234,7 +2178,9 @@
       "id": "pers-oz-buffy",
       "naam": "Oz",
       "rol": "Wolfmens",
-      "rolId": "rol-wolfmens",
+      "rolIds": [
+        "rol-wolfmens"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2248,7 +2194,9 @@
       "id": "pers-principle-snyder-buffy",
       "naam": "Principle Snyder",
       "rol": "Stoorzender",
-      "rolId": "rol-stoorzender",
+      "rolIds": [
+        "rol-stoorzender"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2262,7 +2210,9 @@
       "id": "pers-faith-buffy",
       "naam": "Faith",
       "rol": "Slayer (slet)",
-      "rolId": null,
+      "rolIds": [
+        "rol-slet"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2276,7 +2226,9 @@
       "id": "pers-dawn-buffy",
       "naam": "Dawn",
       "rol": "Bountyhunter",
-      "rolId": "rol-bountyhunter",
+      "rolIds": [
+        "rol-bountyhunter"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2290,7 +2242,9 @@
       "id": "pers-anya-buffy",
       "naam": "Anya",
       "rol": "Handelaar",
-      "rolId": "rol-handelaar",
+      "rolIds": [
+        "rol-handelaar"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2304,7 +2258,9 @@
       "id": "pers-riley-finn-buffy",
       "naam": "Riley Finn",
       "rol": "Cipier",
-      "rolId": "rol-cipier",
+      "rolIds": [
+        "rol-cipier"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2318,7 +2274,9 @@
       "id": "pers-kendra-buffy",
       "naam": "Kendra",
       "rol": "Jager",
-      "rolId": "rol-jager",
+      "rolIds": [
+        "rol-jager"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2332,7 +2290,9 @@
       "id": "pers-jenny-calendar-buffy",
       "naam": "Jenny Calendar",
       "rol": "Heks",
-      "rolId": "rol-heks",
+      "rolIds": [
+        "rol-heks"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2346,7 +2306,7 @@
       "id": "pers-joyce-summers-buffy",
       "naam": "Joyce Summers",
       "rol": null,
-      "rolId": null,
+      "rolIds": [],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2362,7 +2322,9 @@
       "id": "pers-harmony-buffy",
       "naam": "Harmony",
       "rol": "Vervloekte",
-      "rolId": "rol-vervloekte",
+      "rolIds": [
+        "rol-vervloekte"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2376,7 +2338,9 @@
       "id": "pers-wesley-wyndam-price-buffy",
       "naam": "Wesley Wyndam Price",
       "rol": "Nobel",
-      "rolId": null,
+      "rolIds": [
+        "rol-adel"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2390,7 +2354,9 @@
       "id": "pers-quentin-travers-buffy",
       "naam": "Quentin Travers",
       "rol": "Nobel",
-      "rolId": null,
+      "rolIds": [
+        "rol-adel"
+      ],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2404,7 +2370,7 @@
       "id": "pers-angel-buffy",
       "naam": "Angel",
       "rol": null,
-      "rolId": null,
+      "rolIds": [],
       "thema": "Buffy",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2420,7 +2386,9 @@
       "id": "pers-the-master-buffy",
       "naam": "The master",
       "rol": "Roedelleider",
-      "rolId": "rol-roedelleider",
+      "rolIds": [
+        "rol-roedelleider"
+      ],
       "thema": "Buffy",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2434,7 +2402,9 @@
       "id": "pers-drusilla-buffy",
       "naam": "Drusilla",
       "rol": "Stoorwolf",
-      "rolId": "rol-stoorwolf",
+      "rolIds": [
+        "rol-stoorwolf"
+      ],
       "thema": "Buffy",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2448,7 +2418,9 @@
       "id": "pers-glory-buffy",
       "naam": "Glory",
       "rol": "manipulatiewolf",
-      "rolId": null,
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": "Buffy",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2462,7 +2434,9 @@
       "id": "pers-the-anointed-one-buffy",
       "naam": "The anointed one",
       "rol": "Welp",
-      "rolId": "rol-welp",
+      "rolIds": [
+        "rol-welp"
+      ],
       "thema": "Buffy",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2476,7 +2450,9 @@
       "id": "pers-mayor-wilkins-buffy",
       "naam": "Mayor Wilkins",
       "rol": "Sjamaan",
-      "rolId": "rol-sjamaan",
+      "rolIds": [
+        "rol-sjamaan"
+      ],
       "thema": "Buffy",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2490,7 +2466,9 @@
       "id": "pers-darla-buffy",
       "naam": "Darla",
       "rol": "Conversiewolf",
-      "rolId": "rol-conversiewolf",
+      "rolIds": [
+        "rol-conversiewolf"
+      ],
       "thema": "Buffy",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2504,7 +2482,9 @@
       "id": "pers-spike-buffy",
       "naam": "Spike",
       "rol": "Ketterwolf",
-      "rolId": "rol-ketterwolf",
+      "rolIds": [
+        "rol-ketterwolf"
+      ],
       "thema": "Buffy",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2518,7 +2498,10 @@
       "id": "pers-d-hoffryn-buffy",
       "naam": "D'Hoffryn",
       "rol": "Vengance demon",
-      "rolId": null,
+      "rolIds": [
+        "rol-weerwolf",
+        "rol-conversiewolf"
+      ],
       "thema": "Buffy",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2532,7 +2515,9 @@
       "id": "pers-vampier-demon-buffy",
       "naam": "Vampier/demon",
       "rol": null,
-      "rolId": null,
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": "Buffy",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2548,7 +2533,9 @@
       "id": "pers-uitwerking-weerwolf",
       "naam": null,
       "rol": "Weerwolf",
-      "rolId": "rol-weerwolf",
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": null,
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2562,7 +2549,9 @@
       "id": "pers-uitwerking-ziener",
       "naam": null,
       "rol": "Ziener",
-      "rolId": "rol-ziener",
+      "rolIds": [
+        "rol-ziener"
+      ],
       "thema": null,
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2576,7 +2565,9 @@
       "id": "pers-uitwerking-slet",
       "naam": null,
       "rol": "Slet",
-      "rolId": "rol-slet",
+      "rolIds": [
+        "rol-slet"
+      ],
       "thema": null,
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2590,7 +2581,9 @@
       "id": "pers-uitwerking-banketbakker",
       "naam": null,
       "rol": "Banketbakker",
-      "rolId": "rol-bankketbakker",
+      "rolIds": [
+        "rol-bankketbakker"
+      ],
       "thema": null,
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2604,7 +2597,9 @@
       "id": "pers-uitwerking-jager",
       "naam": null,
       "rol": "Jager",
-      "rolId": "rol-jager",
+      "rolIds": [
+        "rol-jager"
+      ],
       "thema": null,
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2618,7 +2613,9 @@
       "id": "pers-uitwerking-beul",
       "naam": null,
       "rol": "Beul",
-      "rolId": "rol-beul",
+      "rolIds": [
+        "rol-beul"
+      ],
       "thema": null,
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2632,7 +2629,9 @@
       "id": "pers-uitwerking-weerhamster",
       "naam": null,
       "rol": "Weerhamster",
-      "rolId": "rol-weerhamster",
+      "rolIds": [
+        "rol-weerhamster"
+      ],
       "thema": null,
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2646,7 +2645,9 @@
       "id": "pers-uitwerking-valse-engel",
       "naam": null,
       "rol": "Valse Engel",
-      "rolId": "rol-valse-engel",
+      "rolIds": [
+        "rol-valse-engel"
+      ],
       "thema": null,
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2660,7 +2661,9 @@
       "id": "pers-uitwerking-de-tekenaar",
       "naam": null,
       "rol": "De tekenaar",
-      "rolId": "rol-storyteller",
+      "rolIds": [
+        "rol-storyteller"
+      ],
       "thema": null,
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2674,7 +2677,9 @@
       "id": "pers-sylvia-tilly-star-trek",
       "naam": "Sylvia Tilly",
       "rol": "Engineer",
-      "rolId": null,
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": "Star Trek",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2688,7 +2693,9 @@
       "id": "pers-hoshi-sato-star-trek",
       "naam": "Hoshi Sato",
       "rol": "Vertaler",
-      "rolId": null,
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": "Star Trek",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2702,7 +2709,10 @@
       "id": "pers-captain-benjamin-sisko-star-trek",
       "naam": "Captain Benjamin Sisko",
       "rol": "Kapitein",
-      "rolId": null,
+      "rolIds": [
+        "rol-kapitein",
+        "rol-weerwolf"
+      ],
       "thema": "Star Trek",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2716,7 +2726,9 @@
       "id": "pers-worf-star-trek",
       "naam": "Worf",
       "rol": "Veiligheidsofficier",
-      "rolId": null,
+      "rolIds": [
+        "rol-weerwolf"
+      ],
       "thema": "Star Trek",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2730,7 +2742,9 @@
       "id": "pers-kira-nerys-star-trek",
       "naam": "Kira Nerys",
       "rol": "Bajoran leider",
-      "rolId": null,
+      "rolIds": [
+        "rol-welp"
+      ],
       "thema": "Star Trek",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2744,7 +2758,10 @@
       "id": "pers-philippa-georgiou-star-trek",
       "naam": "Philippa Georgiou",
       "rol": "Kapitein",
-      "rolId": null,
+      "rolIds": [
+        "rol-kapitein",
+        "rol-weerwolf"
+      ],
       "thema": "Star Trek",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2758,7 +2775,10 @@
       "id": "pers-gabriel-lorca-star-trek",
       "naam": "Gabriel Lorca",
       "rol": "Kapitein",
-      "rolId": null,
+      "rolIds": [
+        "rol-kapitein",
+        "rol-weerwolf"
+      ],
       "thema": "Star Trek",
       "alliantie": "Slecht",
       "alliantieTekst": null,
@@ -2774,7 +2794,9 @@
       "id": "pers-pike-star-trek",
       "naam": "Pike",
       "rol": "Kapitein",
-      "rolId": null,
+      "rolIds": [
+        "rol-kapitein"
+      ],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2791,7 +2813,7 @@
       "id": "pers-borg-queen-star-trek",
       "naam": "Borg queen",
       "rol": "Assimilator",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Star Trek",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -2805,7 +2827,7 @@
       "id": "pers-q-star-trek",
       "naam": "Q",
       "rol": "Q",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Star Trek",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -2819,7 +2841,7 @@
       "id": "pers-dr-noonien-soong-star-trek",
       "naam": "Dr Noonien Soong",
       "rol": "Uitvinder",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2833,7 +2855,7 @@
       "id": "pers-data-star-trek",
       "naam": "Data",
       "rol": "Engineer",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2847,7 +2869,7 @@
       "id": "pers-paul-stamets-star-trek",
       "naam": "Paul Stamets",
       "rol": "engineer",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2861,7 +2883,7 @@
       "id": "pers-hugh-culber-star-trek",
       "naam": "Hugh Culber",
       "rol": "Dokter",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2875,7 +2897,9 @@
       "id": "pers-odo-star-trek",
       "naam": "Odo",
       "rol": "Founder Security chef",
-      "rolId": null,
+      "rolIds": [
+        "rol-kameleon"
+      ],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2889,7 +2913,7 @@
       "id": "pers-dax-star-trek",
       "naam": "Dax",
       "rol": "Symbiont",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2903,7 +2927,9 @@
       "id": "pers-quark-star-trek",
       "naam": "Quark",
       "rol": "Barman",
-      "rolId": null,
+      "rolIds": [
+        "rol-handelaar"
+      ],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2917,7 +2943,9 @@
       "id": "pers-deanna-troi-star-trek",
       "naam": "Deanna Troi",
       "rol": "Empath",
-      "rolId": null,
+      "rolIds": [
+        "rol-medium"
+      ],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2931,7 +2959,7 @@
       "id": "pers-miles-obrian-star-trek",
       "naam": "Miles O’Brian",
       "rol": "Pechvogel/ Chief of operation",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Star Trek",
       "alliantie": "Neutraal",
       "alliantieTekst": null,
@@ -2947,7 +2975,7 @@
       "id": "pers-sonja-gomez-star-trek",
       "naam": "Sonja Gomez",
       "rol": "SCE Engineer",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2961,7 +2989,9 @@
       "id": "pers-spock-star-trek",
       "naam": "Spock",
       "rol": "Vulcan ambassadeur",
-      "rolId": null,
+      "rolIds": [
+        "rol-ziener"
+      ],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2975,7 +3005,9 @@
       "id": "pers-captain-jean-luc-picard-star-trek",
       "naam": "Captain Jean Luc Picard",
       "rol": "Captain",
-      "rolId": null,
+      "rolIds": [
+        "rol-kapitein"
+      ],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -2989,7 +3021,9 @@
       "id": "pers-captain-katheryn-janeway-star-trek",
       "naam": "Captain Katheryn Janeway",
       "rol": "Captain",
-      "rolId": null,
+      "rolIds": [
+        "rol-kapitein"
+      ],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -3003,7 +3037,9 @@
       "id": "pers-elim-garak-star-trek",
       "naam": "Elim Garak",
       "rol": "Kleermaker/assasin",
-      "rolId": null,
+      "rolIds": [
+        "rol-slet"
+      ],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -3017,7 +3053,9 @@
       "id": "pers-saru-star-trek",
       "naam": "Saru",
       "rol": "Scheikundige",
-      "rolId": null,
+      "rolIds": [
+        "rol-beschermengel"
+      ],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -3031,7 +3069,10 @@
       "id": "pers-emh-star-trek",
       "naam": "EMH",
       "rol": "Dokter",
-      "rolId": null,
+      "rolIds": [
+        "rol-heks",
+        "rol-kapitein"
+      ],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,
@@ -3045,7 +3086,7 @@
       "id": "pers-jake-sisko-star-trek",
       "naam": "Jake Sisko",
       "rol": "Reporter",
-      "rolId": null,
+      "rolIds": [],
       "thema": "Star Trek",
       "alliantie": "Goed",
       "alliantieTekst": null,

@@ -1,4 +1,4 @@
-import { personageItemPerId } from '../lib/items'
+import { variantenPerRol } from '../lib/items'
 import { isGewoneKlik } from '../lib/route'
 import type { Rol } from '../types'
 import { AllianceBadge } from './AllianceBadge'
@@ -10,7 +10,7 @@ interface Props {
 }
 
 export function RolDetail({ rol, onOpen }: Props) {
-  const varianten = rol.varianten.flatMap((id) => personageItemPerId.get(id) ?? [])
+  const varianten = variantenPerRol.get(rol.id) ?? []
   return (
     <>
       <header className="detail-kop">

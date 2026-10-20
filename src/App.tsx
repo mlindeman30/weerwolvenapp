@@ -1,44 +1,49 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Detail } from './components/Detail'
 import { ItemList, type Weergave } from './components/ItemList'
+import { MijnLijst } from './components/MijnLijst'
+import type { Optie } from './components/MultiSelect'
 import { PersonageDetail } from './components/PersonageDetail'
 import { RolDetail } from './components/RolDetail'
-import {
-  Toolbar,
-  type AlliantieFilter,
-  type FilterOptie,
-  type ThemaFilter,
-} from './components/Toolbar'
+import { Toolbar } from './components/Toolbar'
+import { Trek } from './components/Trek'
 import { personagePerId, rolPerId } from './lib/data'
 import { personageItems, rolItems, type ListItem } from './lib/items'
 import { HREF_LIJST, useRoute } from './lib/route'
 import { komtOvereen } from './lib/search'
 
-type Tab = 'rollen' | 'personages'
+type Tab = 'rollen' | 'personages' | 'lijst'
 
-const ALLIANTIES: { waarde: AlliantieFilter; label: string }[] = [
-  { waarde: 'alle', label: 'Alle' },
-  { waarde: 'Goed', label: 'Goed' },
-  { waarde: 'Neutraal', label: 'Neutraal' },
-  { waarde: 'Slecht', label: 'Slecht' },
-  { waarde: 'Gelinkt', label: 'Gelinkt' },
-  { waarde: 'onbekend', label: 'Onbekend' },
-]
+const ONBEKEND = '__onbekend__'
+const GEEN_THEMA = '__geen_thema__'
 
-const THEMAS: { waarde: ThemaFilter; label: string }[] = [
-  { waarde: 'alle', label: "Alle thema's" },
-  { waarde: 'Star Trek', label: 'Star Trek' },
-  { waarde: 'Avatar', label: 'Avatar' },
-  { waarde: 'Stardew Valley', label: 'Stardew Valley' },
-  { waarde: 'Buffy', label: 'Buffy' },
-  { waarde: 'geen', label: 'Geen thema' },
-]
+const alliantieWaarde = (item: ListItem) => item.alliantie ?? ONBEKEND
+const themaWaarde = (item: ListItem) => item.thema ?? GEEN_THEMA
 
-const hoortBijAlliantie = (item: ListItem, filter: AlliantieFilter) =>
-  filter === 'alle' ? true : filter === 'onbekend' ? item.alliantie === null : item.alliantie === filter
+/** Een lege keuze betekent: geen beperking. */
+const past = (gekozen: string[], waarde: string) => gekozen.length === 0 || gekozen.includes(waarde)
 
-const hoortBijThema = (item: ListItem, filter: ThemaFilter) =>
-  filter === 'alle' ? true : filter === 'geen' ? item.thema === null : item.thema === filter
+/**
+ * Maakt de opties voor een filter uit de data: alfabetisch, met 'Onbekend' of 'Geen thema' als laatste.
+ * De aantallen tellen alleen de items die ook aan de andere filters voldoen.
+ */
+function maakOpties(
+  alleItems: ListItem[],
+  tellenItems: ListItem[],
+  waardeVan: (item: ListItem) => string,
+  speciaal: { waarde: string; label: string },
+): Optie[] {
+  const waarden = new Set(alleItems.map(waardeVan))
+  const gewone = [...waarden]
+    .filter((w) => w !== speciaal.waarde)
+    .sort((a, b) => a.localeCompare(b, 'nl', { sensitivity: 'base' }))
+  const volgorde = waarden.has(speciaal.waarde) ? [...gewone, speciaal.waarde] : gewone
+  return volgorde.map((waarde) => ({
+    waarde,
+    label: waarde === speciaal.waarde ? speciaal.label : waarde,
+    aantal: tellenItems.filter((i) => waardeVan(i) === waarde).length,
+  }))
+}
 
 function leesWeergave(): Weergave {
   try {
@@ -48,52 +53,75 @@ function leesWeergave(): Weergave {
   }
 }
 
-function maakOpties<T extends string>(
-  definities: { waarde: T; label: string }[],
-  items: ListItem[],
-  hoortBij: (item: ListItem, waarde: T) => boolean,
-  actief: T,
-): FilterOptie<T>[] {
-  return definities
-    .map((d) => ({ ...d, aantal: items.filter((i) => hoortBij(i, d.waarde)).length }))
-    .filter((d) => d.waarde === 'alle' || d.waarde === actief || d.aantal > 0)
-}
-
 export default function App() {
   const [route, navigeer] = useRoute()
   // Bij een rechtstreekse link naar een personage starten we in het juiste tabblad.
   const [tab, setTab] = useState<Tab>(route.soort === 'personage' ? 'personages' : 'rollen')
   const [zoekopdracht, setZoekopdracht] = useState('')
-  const [filter, setFilter] = useState<AlliantieFilter>('alle')
-  const [themaFilter, setThemaFilter] = useState<ThemaFilter>('alle')
+  const [gekozenAlliantie, setGekozenAlliantie] = useState<string[]>([])
+  const [gekozenThema, setGekozenThema] = useState<string[]>([])
   const [weergave, setWeergave] = useState<Weergave>(leesWeergave)
 
-  const items = tab === 'rollen' ? rolItems : personageItems
+  const [gekozen, setGekozen] = useState<Set<string>>(() => new Set())
+  const [getrokken, setGetrokken] = useState<ListItem | null>(null)
+
+  function wissel(id: string) {
+    setGekozen((vorige) => {
+      const nieuw = new Set(vorige)
+      if (!nieuw.delete(id)) nieuw.add(id)
+      return nieuw
+    })
+  }
+
+  function trek() {
+    // Uit alle rollen en personages samen, zonder filters.
+    const alles = [...rolItems, ...personageItems]
+    setGetrokken(alles[Math.floor(Math.random() * alles.length)])
+  }
+
+  const lijstRollen = rolItems.filter((i) => gekozen.has(i.id))
+  const lijstPersonages = personageItems.filter((i) => gekozen.has(i.id))
+
+  // In het tabblad Mijn lijst is er geen lijst om te filteren; we gebruiken dan de rollen als basis.
+  const items = tab === 'personages' ? personageItems : rolItems
   const metThema = tab === 'personages'
-  const actiefThema: ThemaFilter = metThema ? themaFilter : 'alle'
 
   const gevonden = useMemo(
     () => items.filter((i) => komtOvereen(i.zoektekst, zoekopdracht)),
     [items, zoekopdracht],
   )
-  const zichtbaar = gevonden.filter(
-    (i) => hoortBijAlliantie(i, filter) && hoortBijThema(i, actiefThema),
+
+  const alliantieOpties = useMemo(
+    () =>
+      maakOpties(
+        items,
+        gevonden.filter((i) => !metThema || past(gekozenThema, themaWaarde(i))),
+        alliantieWaarde,
+        { waarde: ONBEKEND, label: 'Onbekend' },
+      ),
+    [items, gevonden, metThema, gekozenThema],
+  )
+  const themaOpties = useMemo(
+    () =>
+      metThema
+        ? maakOpties(
+            items,
+            gevonden.filter((i) => past(gekozenAlliantie, alliantieWaarde(i))),
+            themaWaarde,
+            { waarde: GEEN_THEMA, label: 'Geen thema' },
+          )
+        : undefined,
+    [items, gevonden, metThema, gekozenAlliantie],
   )
 
-  const alliantieOpties = maakOpties(
-    ALLIANTIES,
-    gevonden.filter((i) => hoortBijThema(i, actiefThema)),
-    hoortBijAlliantie,
-    filter,
+  // Een keuze die in dit tabblad niet bestaat (bijvoorbeeld 'Gelinkt' bij Rollen) telt niet mee.
+  const alliantie = gekozenAlliantie.filter((w) => alliantieOpties.some((o) => o.waarde === w))
+  const thema = metThema ? gekozenThema.filter((w) => themaOpties?.some((o) => o.waarde === w)) : []
+
+  const zichtbaar = gevonden.filter(
+    (i) => past(alliantie, alliantieWaarde(i)) && (!metThema || past(thema, themaWaarde(i))),
   )
-  const themaOpties = metThema
-    ? maakOpties(
-        THEMAS,
-        gevonden.filter((i) => hoortBijAlliantie(i, filter)),
-        hoortBijThema,
-        themaFilter,
-      )
-    : undefined
+  const filtersActief = alliantie.length > 0 || thema.length > 0
 
   const rol = route.soort === 'rol' ? rolPerId.get(route.id) : undefined
   const personage = route.soort === 'personage' ? personagePerId.get(route.id) : undefined
@@ -119,6 +147,23 @@ export default function App() {
         <p>Rollen en personages uit Digitaal Weerwolven</p>
       </header>
 
+      <div className="trek-balk">
+        <button type="button" className="chip" onClick={trek}>
+          Trek een willekeurige rol
+        </button>
+      </div>
+      {getrokken && (
+        <Trek
+          item={getrokken}
+          soort={rolPerId.has(getrokken.id) ? 'Rol' : 'Personage'}
+          inLijst={gekozen.has(getrokken.id)}
+          onOpen={navigeer}
+          onOpnieuw={trek}
+          onWissel={() => wissel(getrokken.id)}
+          onSluit={() => setGetrokken(null)}
+        />
+      )}
+
       <div className="tabs" role="tablist" aria-label="Soort">
         <button
           type="button"
@@ -138,32 +183,72 @@ export default function App() {
         >
           Personages <span className="aantal">{personageItems.length}</span>
         </button>
+        <button
+          type="button"
+          role="tab"
+          aria-selected={tab === 'lijst'}
+          className={`tab${tab === 'lijst' ? ' actief' : ''}`}
+          onClick={() => setTab('lijst')}
+        >
+          Mijn lijst <span className="aantal">{gekozen.size}</span>
+        </button>
       </div>
 
+      {tab === 'lijst' ? (
+        <MijnLijst
+          rollen={lijstRollen}
+          personages={lijstPersonages}
+          weergave={weergave}
+          gekozen={gekozen}
+          onWissel={wissel}
+          onLeeg={() => setGekozen(new Set())}
+          onOpen={navigeer}
+        />
+      ) : (
+        <>
       <Toolbar
         zoekopdracht={zoekopdracht}
         onZoekopdracht={setZoekopdracht}
-        filters={alliantieOpties}
-        filter={filter}
-        onFilter={setFilter}
-        themaFilters={themaOpties}
-        themaFilter={themaFilter}
-        onThemaFilter={setThemaFilter}
+        alliantieOpties={alliantieOpties}
+        alliantie={alliantie}
+        onAlliantie={setGekozenAlliantie}
+        themaOpties={themaOpties}
+        thema={thema}
+        onThema={setGekozenThema}
         weergave={weergave}
         onWeergave={kiesWeergave}
       />
 
       <p className="resultaat" aria-live="polite">
         {zichtbaar.length} van {items.length} {tab === 'rollen' ? 'rollen' : 'personages'}
+        {filtersActief && (
+          <>
+            {' · '}
+            <button
+              type="button"
+              className="link-knop"
+              onClick={() => {
+                setGekozenAlliantie([])
+                setGekozenThema([])
+              }}
+            >
+              Filters wissen
+            </button>
+          </>
+        )}
       </p>
 
-      <ItemList items={zichtbaar} weergave={weergave} onOpen={navigeer} />
+      <ItemList items={zichtbaar} weergave={weergave} onOpen={navigeer} gekozen={gekozen} onWissel={wissel} />
+        </>
+      )}
 
       {(rol || personage) && (
         <Detail
           sleutel={rol?.id ?? personage?.id ?? ''}
           titelId="detail-titel"
           onSluit={() => navigeer(HREF_LIJST)}
+          inLijst={gekozen.has(rol?.id ?? personage?.id ?? '')}
+          onWissel={() => wissel(rol?.id ?? personage?.id ?? '')}
         >
           {rol && <RolDetail rol={rol} onOpen={navigeer} />}
           {personage && <PersonageDetail personage={personage} onOpen={navigeer} />}

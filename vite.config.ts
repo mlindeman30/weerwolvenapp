@@ -5,4 +5,6 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   base: './',
   plugins: [react()],
+  // Build naar 'docs' zodat GitHub Pages hem kan publiceren vanuit main /docs.
+  build: { outDir: 'docs' },
 })

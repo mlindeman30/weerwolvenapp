@@ -34,7 +34,7 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--accent); ou
   flex: 1 1 280px; min-height: 44px; padding: 8px 14px; border: 1px solid var(--lijn);
   border-radius: 10px; background: var(--kaart); color: var(--tekst);
 }
-.chips, .weergave { display: flex; flex-wrap: wrap; gap: 6px; }
+.weergave { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
   border: 1px solid var(--lijn); background: var(--kaart); color: var(--tekst); border-radius: 999px;
   padding: 6px 14px; cursor: pointer; min-height: 40px;
@@ -48,9 +48,9 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--accent); ou
 ul.kaarten, ul.lijst { list-style: none; margin: 0; padding: 0; }
 ul.kaarten { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
 ul.lijst { display: flex; flex-direction: column; gap: 6px; }
-.item { background: var(--kaart); border: 1px solid var(--lijn); border-radius: 12px; }
+.item { position: relative; background: var(--kaart); border: 1px solid var(--lijn); border-radius: 12px; }
 .item:hover { border-color: var(--accent); }
-.item-link { display: block; padding: 14px 16px; color: inherit; text-decoration: none; border-radius: 12px; }
+.item-link { display: block; padding: 14px 56px 14px 16px; color: inherit; text-decoration: none; border-radius: 12px; }
 .item-kop { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
 .item h3 { margin: 0; font-size: 1.05rem; overflow-wrap: anywhere; }
 .item p { margin: 4px 0 0; }
@@ -58,7 +58,7 @@ ul.lijst { display: flex; flex-direction: column; gap: 6px; }
 .item-verwijzing { color: var(--accent); font-size: 0.85rem; }
 .item-tekst { font-size: 0.92rem; }
 .thema { white-space: nowrap; }
-ul.lijst .item-link { padding: 10px 14px; }
+ul.lijst .item-link { padding: 10px 56px 10px 14px; }
 ul.lijst .item-tekst { display: none; }
 
 .badge { flex: none; font-size: 0.75rem; font-weight: 700; border-radius: 999px; padding: 2px 10px; border: 1px solid; }
@@ -113,7 +113,53 @@ dialog.detail::backdrop { background: rgba(20, 24, 34, 0.55); }
 dialog.detail:focus { outline: none; }
 @media (max-width: 699px) {
   dialog.detail { width: 100%; max-width: none; max-height: none; height: 100%; margin: 0; border-radius: 0; border: 0; }
-  /* Chips scrollen op mobiel zijwaarts binnen hun eigen rij, zodat de lijst hoger op de pagina begint. */
-  .chips { flex-wrap: nowrap; overflow-x: auto; width: 100%; padding-bottom: 4px; scrollbar-width: thin; }
-  .chip { flex: none; }
 }
+
+/* Filters als keuzelijst */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.multi { position: relative; }
+.multi-knop {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 6px 14px; cursor: pointer;
+  border: 1px solid var(--lijn); border-radius: 10px; background: var(--kaart); color: var(--tekst);
+}
+.multi-knop.actief { border-color: var(--accent); background: var(--accent-licht); }
+.multi-label { color: var(--gedempt); }
+.pijl { margin-left: 2px; font-size: 0.8em; color: var(--gedempt); }
+.multi-paneel {
+  position: absolute; top: calc(100% + 6px); z-index: 5; min-width: 230px; max-width: calc(100vw - 32px);
+  max-height: 60vh; overflow: auto; padding: 6px; background: var(--kaart);
+  border: 1px solid var(--lijn); border-radius: 12px; box-shadow: 0 10px 30px rgba(20, 24, 34, 0.18);
+}
+.multi-links { left: 0; }
+.multi-rechts { right: 0; }
+.multi-optie { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 4px 10px; border-radius: 8px; cursor: pointer; }
+.multi-optie:hover { background: var(--accent-licht); }
+.multi-optie input { width: 20px; height: 20px; accent-color: var(--accent); flex: none; }
+.multi-optie.uit { opacity: 0.5; cursor: default; }
+.multi-optie.uit:hover { background: none; }
+.multi-tekst { flex: 1; }
+.multi-wis, .link-knop { border: 0; background: none; color: var(--accent); cursor: pointer; padding: 0; text-decoration: underline; }
+.multi-wis { width: 100%; min-height: 44px; margin-top: 4px; border-top: 1px solid var(--lijn); border-radius: 0; }
+.link-knop { font: inherit; }
+@media (max-width: 699px) {
+  .filters { width: 100%; }
+  .multi { flex: 1 1 0; min-width: 0; }
+  .multi-knop { width: 100%; justify-content: space-between; }
+}
+
+/* Mijn lijst en willekeurig trekken */
+.kies { position: absolute; top: 0; right: 0; width: 52px; height: 52px; display: grid; place-items: center; cursor: pointer; }
+.kies input { width: 22px; height: 22px; accent-color: var(--accent); cursor: pointer; }
+.item.gekozen { border-color: var(--accent); background: var(--accent-licht); }
+.balk-acties { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.trek-balk { margin: 0 0 12px; }
+.trek { margin: 0 0 16px; padding: 14px 16px; background: var(--kaart); border: 1px solid var(--accent); border-radius: 12px; }
+.trek p { margin: 0; }
+.trek-naam { font-size: 1.4rem; font-weight: 700; overflow-wrap: anywhere; }
+.trek-acties { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+a.chip { display: inline-flex; align-items: center; text-decoration: none; }
+a.chip.actief { color: #fff; }
+.lijst-acties { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 12px; }
+.reservetekst { width: 100%; margin-bottom: 12px; padding: 10px; border: 1px solid var(--lijn); border-radius: 10px; font: inherit; }
+.lijst-groep { margin-top: 18px; }
+.lijst-groep h2 { margin: 0 0 8px; font-size: 1.1rem; }

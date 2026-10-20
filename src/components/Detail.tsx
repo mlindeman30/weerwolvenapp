@@ -5,10 +5,13 @@ interface Props {
   sleutel: string
   titelId: string
   onSluit: () => void
+  /** Staat dit item in 'Mijn lijst'? */
+  inLijst: boolean
+  onWissel: () => void
   children: ReactNode
 }
 
-export function Detail({ sleutel, titelId, onSluit, children }: Props) {
+export function Detail({ sleutel, titelId, onSluit, inLijst, onWissel, children }: Props) {
   const ref = useRef<HTMLDialogElement>(null)
 
   useEffect(() => {
@@ -42,7 +45,12 @@ export function Detail({ sleutel, titelId, onSluit, children }: Props) {
       }}
     >
       <div className="detail-balk">
-        <KopieerLink />
+        <span className="balk-acties">
+          <KopieerLink />
+          <button type="button" className={`chip${inLijst ? ' actief' : ''}`} aria-pressed={inLijst} onClick={onWissel}>
+            {inLijst ? 'In mijn lijst' : 'Voeg toe aan mijn lijst'}
+          </button>
+        </span>
         <button type="button" className="sluit" onClick={onSluit} aria-label="Sluiten">
           ✕
         </button>

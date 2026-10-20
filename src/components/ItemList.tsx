@@ -8,16 +8,19 @@ interface Props {
   items: ListItem[]
   weergave: Weergave
   onOpen: (href: string) => void
+  /** Ids van de items in 'Mijn lijst'. */
+  gekozen: Set<string>
+  onWissel: (id: string) => void
 }
 
-export function ItemList({ items, weergave, onOpen }: Props) {
+export function ItemList({ items, weergave, onOpen, gekozen, onWissel }: Props) {
   if (items.length === 0) {
     return <p className="leeg">Geen resultaten. Pas je zoekopdracht of filter aan.</p>
   }
   return (
     <ul className={weergave === 'kaarten' ? 'kaarten' : 'lijst'}>
       {items.map((item) => (
-        <li key={item.id} className="item">
+        <li key={item.id} className={`item${gekozen.has(item.id) ? ' gekozen' : ''}`}>
           <a
             className="item-link"
             href={item.href}
@@ -47,6 +50,14 @@ export function ItemList({ items, weergave, onOpen }: Props) {
             )}
             {item.snippet && <p className="item-tekst">{item.snippet}</p>}
           </a>
+          <label className="kies">
+            <input
+              type="checkbox"
+              checked={gekozen.has(item.id)}
+              onChange={() => onWissel(item.id)}
+              aria-label={`${item.titel} in mijn lijst`}
+            />
+          </label>
         </li>
       ))}
     </ul>
