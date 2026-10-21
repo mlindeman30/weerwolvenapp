@@ -17,6 +17,8 @@ export interface ListItem {
   thema: Thema | null
   snippet: string
   aantalVarianten: number
+  /** Velden die nog aangevuld moeten worden, bijvoorbeeld ['omschrijving']. */
+  aanTeVullen: string[]
   zoektekst: string
 }
 
@@ -52,6 +54,7 @@ export const rolItems: ListItem[] = rollen
     thema: null,
     snippet: kort(r.omschrijving || r.krachten),
     aantalVarianten: aantalPerRol.get(r.id) ?? 0,
+    aanTeVullen: r.aanTeVullen,
     zoektekst: normaliseer([r.naam, r.omschrijving, r.krachten].join(' ')),
   }))
   .sort(sorteer)
@@ -73,6 +76,7 @@ export const personageItems: ListItem[] = personages
       thema: p.thema,
       snippet: kort(p.omschrijving || p.krachten),
       aantalVarianten: 0,
+      aanTeVullen: p.aanTeVullen,
       zoektekst: normaliseer(
         [p.naam, p.rol, p.thema, p.omschrijving, p.krachten].filter(Boolean).join(' '),
       ),

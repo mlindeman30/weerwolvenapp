@@ -2,7 +2,7 @@ import { rolPerId } from '../lib/data'
 import { hrefRol, isGewoneKlik } from '../lib/route'
 import type { Personage } from '../types'
 import { AllianceBadge } from './AllianceBadge'
-import { Sectie } from './Sectie'
+import { AanTeVullen, Sectie } from './Sectie'
 
 interface Props {
   personage: Personage
@@ -43,6 +43,7 @@ export function PersonageDetail({ personage: p, onOpen }: Props) {
             ))}
           </p>
         )}
+        <AanTeVullen velden={p.aanTeVullen} />
       </header>
       <Sectie titel="Omschrijving" tekst={p.omschrijving} />
       <Sectie titel="Rolkrachten" tekst={p.krachten} />

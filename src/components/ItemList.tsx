@@ -33,7 +33,14 @@ export function ItemList({ items, weergave, onOpen, gekozen, onWissel }: Props) 
           >
             <div className="item-kop">
               <h3>{item.titel}</h3>
-              <AllianceBadge alliantie={item.alliantie} />
+              <span className="item-labels">
+                <AllianceBadge alliantie={item.alliantie} />
+                {item.aanTeVullen.length > 0 && (
+                  <span className="badge badge-aanvullen" title={`Nog aan te vullen: ${item.aanTeVullen.join(', ')}`}>
+                    Nog aan te vullen
+                  </span>
+                )}
+              </span>
             </div>
             {(item.subtitel || item.thema) && (
               <p className="item-meta">

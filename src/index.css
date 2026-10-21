@@ -72,7 +72,7 @@ ul.lijst .item-tekst { display: none; }
   ul.lijst .item-link { display: grid; grid-template-columns: minmax(180px, 1.2fr) 2fr auto; align-items: center; gap: 12px; }
   ul.lijst .item-link p { margin: 0; }
   ul.lijst .item-kop { display: contents; }
-  ul.lijst .item-kop .badge { grid-column: 3; grid-row: 1; justify-self: end; }
+  ul.lijst .item-kop .item-labels { grid-column: 3; grid-row: 1; justify-self: end; }
   ul.lijst .item-kop h3 { grid-column: 1; grid-row: 1; }
   ul.lijst .item-meta, ul.lijst .item-verwijzing { grid-column: 2; grid-row: 1; }
   ul.lijst .item-meta + .item-verwijzing { display: none; }
@@ -163,3 +163,33 @@ a.chip.actief { color: #fff; }
 .reservetekst { width: 100%; margin-bottom: 12px; padding: 10px; border: 1px solid var(--lijn); border-radius: 10px; font: inherit; }
 .lijst-groep { margin-top: 18px; }
 .lijst-groep h2 { margin: 0 0 8px; font-size: 1.1rem; }
+
+/* Markering, sorteren en terugknop */
+.item-labels { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex: none; }
+.badge-aanvullen { background: #fff0e0; color: #8a3b00; border-color: #f2c9a0; }
+.aanvul-melding { margin: 10px 0 0; padding: 8px 12px; background: #fff0e0; color: #6b2e00; border: 1px solid #f2c9a0; border-radius: 10px; font-size: 0.9rem; }
+.toolbar-onder { flex: 1 0 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.sorteer-rij { display: inline-flex; align-items: center; gap: 6px; }
+.sorteer { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; }
+.sorteer select, .sorteer-richting {
+  min-height: 36px; padding: 4px 10px; border: 1px solid var(--lijn); border-radius: 8px;
+  background: var(--kaart); color: var(--tekst); font: inherit; font-size: 0.85rem; cursor: pointer;
+}
+.sorteer-richting { min-width: 104px; }
+.toolbar-onder .chip { min-height: 36px; padding: 4px 12px; font-size: 0.85rem; }
+.sluit.terug { font-size: 1.2rem; }
+
+/* Voorstelformulier */
+.voorstel-link { margin: 24px 0 0; font-size: 0.9rem; color: var(--gedempt); }
+.voorstel-formulier { display: flex; flex-direction: column; gap: 14px; }
+.voorstel-formulier p { margin: 0; }
+.veld { display: flex; flex-direction: column; gap: 4px; }
+.veld > span { font-size: 0.85rem; font-weight: 600; color: var(--gedempt); }
+.veld input[type='text'], .veld select, .veld textarea, .rolkiezer input[type='search'] {
+  width: 100%; min-height: 44px; padding: 8px 12px; border: 1px solid var(--lijn); border-radius: 10px;
+  background: var(--kaart); color: var(--tekst); font: inherit;
+}
+.veld textarea { resize: vertical; }
+.veld-uitleg { margin-top: -8px !important; }
+.rolkiezer { display: flex; flex-direction: column; gap: 6px; }
+.rolkiezer-lijst { max-height: 220px; overflow: auto; border: 1px solid var(--lijn); border-radius: 10px; padding: 4px; }

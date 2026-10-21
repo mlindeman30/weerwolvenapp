@@ -7,10 +7,12 @@ import { PersonageDetail } from './components/PersonageDetail'
 import { RolDetail } from './components/RolDetail'
 import { Toolbar } from './components/Toolbar'
 import { Trek } from './components/Trek'
+import { VoorstelDialoog } from './components/VoorstelDialoog'
 import { personagePerId, rolPerId } from './lib/data'
 import { personageItems, rolItems, type ListItem } from './lib/items'
-import { HREF_LIJST, useRoute } from './lib/route'
+import { HREF_LIJST, hrefPersonage, hrefRol, useRoute } from './lib/route'
 import { komtOvereen } from './lib/search'
+import { sorteerItems, standaardRichting, type Criterium, type Richting } from './lib/sorteer'
 
 type Tab = 'rollen' | 'personages' | 'lijst'
 
@@ -55,15 +57,22 @@ function leesWeergave(): Weergave {
 
 export default function App() {
   const [route, navigeer] = useRoute()
+  // Welke vensters je na elkaar geopend hebt, zodat de pijl in het venster terug kan.
+  const [terugStapel, setTerugStapel] = useState<string[]>([])
   // Bij een rechtstreekse link naar een personage starten we in het juiste tabblad.
   const [tab, setTab] = useState<Tab>(route.soort === 'personage' ? 'personages' : 'rollen')
   const [zoekopdracht, setZoekopdracht] = useState('')
   const [gekozenAlliantie, setGekozenAlliantie] = useState<string[]>([])
   const [gekozenThema, setGekozenThema] = useState<string[]>([])
   const [weergave, setWeergave] = useState<Weergave>(leesWeergave)
+  const [gekozenCriterium, setGekozenCriterium] = useState<Criterium>('naam')
+  const [richting, setRichting] = useState<Richting>('oplopend')
+  const [gekozenAanvullen, setGekozenAanvullen] = useState(false)
 
   const [gekozen, setGekozen] = useState<Set<string>>(() => new Set())
   const [getrokken, setGetrokken] = useState<ListItem | null>(null)
+  // null = formulier dicht; '' = open zonder bestaand item; anders het id van het item.
+  const [voorstel, setVoorstel] = useState<string | null>(null)
 
   function wissel(id: string) {
     setGekozen((vorige) => {
@@ -118,10 +127,22 @@ export default function App() {
   const alliantie = gekozenAlliantie.filter((w) => alliantieOpties.some((o) => o.waarde === w))
   const thema = metThema ? gekozenThema.filter((w) => themaOpties?.some((o) => o.waarde === w)) : []
 
-  const zichtbaar = gevonden.filter(
-    (i) => past(alliantie, alliantieWaarde(i)) && (!metThema || past(thema, themaWaarde(i))),
+  const aantalAanTeVullen = items.filter((i) => i.aanTeVullen.length > 0).length
+  const alleenAanTeVullen = gekozenAanvullen && aantalAanTeVullen > 0
+  // Sorteren op aantal varianten kan alleen bij rollen.
+  const criterium = gekozenCriterium === 'varianten' && tab !== 'rollen' ? 'naam' : gekozenCriterium
+
+  const zichtbaar = sorteerItems(
+    gevonden.filter(
+      (i) =>
+        past(alliantie, alliantieWaarde(i)) &&
+        (!metThema || past(thema, themaWaarde(i))) &&
+        (!alleenAanTeVullen || i.aanTeVullen.length > 0),
+    ),
+    criterium,
+    richting,
   )
-  const filtersActief = alliantie.length > 0 || thema.length > 0
+  const filtersActief = alliantie.length > 0 || thema.length > 0 || alleenAanTeVullen
 
   const rol = route.soort === 'rol' ? rolPerId.get(route.id) : undefined
   const personage = route.soort === 'personage' ? personagePerId.get(route.id) : undefined
@@ -130,6 +151,29 @@ export default function App() {
   useEffect(() => {
     document.title = detailTitel ? `${detailTitel} – Weerwolven Rollenboek` : 'Weerwolven Rollenboek'
   }, [detailTitel])
+
+  const huidigeHref = rol ? hrefRol(rol.id) : personage ? hrefPersonage(personage.id) : null
+
+  /** Opent een rol of personage. Is er al een venster open, dan onthouden we dat voor de terugknop. */
+  function openen(href: string) {
+    setTerugStapel((stapel) => (huidigeHref ? [...stapel, huidigeHref] : []))
+    navigeer(href)
+  }
+
+  function sluitDetail() {
+    setTerugStapel([])
+    navigeer(HREF_LIJST)
+  }
+
+  function terug() {
+    const vorige = terugStapel[terugStapel.length - 1]
+    if (vorige === undefined) {
+      sluitDetail()
+      return
+    }
+    setTerugStapel(terugStapel.slice(0, -1))
+    navigeer(vorige)
+  }
 
   function kiesWeergave(w: Weergave) {
     setWeergave(w)
@@ -150,6 +194,9 @@ export default function App() {
       <div className="trek-balk">
         <button type="button" className="chip" onClick={trek}>
           Trek een willekeurige rol
+        </button>{' '}
+        <button type="button" className="chip" onClick={() => setVoorstel('')}>
+          Voorstel doen
         </button>
       </div>
       {getrokken && (
@@ -157,7 +204,7 @@ export default function App() {
           item={getrokken}
           soort={rolPerId.has(getrokken.id) ? 'Rol' : 'Personage'}
           inLijst={gekozen.has(getrokken.id)}
-          onOpen={navigeer}
+          onOpen={openen}
           onOpnieuw={trek}
           onWissel={() => wissel(getrokken.id)}
           onSluit={() => setGetrokken(null)}
@@ -202,7 +249,7 @@ export default function App() {
           gekozen={gekozen}
           onWissel={wissel}
           onLeeg={() => setGekozen(new Set())}
-          onOpen={navigeer}
+          onOpen={openen}
         />
       ) : (
         <>
@@ -217,6 +264,17 @@ export default function App() {
         onThema={setGekozenThema}
         weergave={weergave}
         onWeergave={kiesWeergave}
+        criterium={criterium}
+        onCriterium={(c) => {
+          setGekozenCriterium(c)
+          setRichting(standaardRichting(c))
+        }}
+        richting={richting}
+        onRichting={setRichting}
+        metVarianten={tab === 'rollen'}
+        aantalAanTeVullen={aantalAanTeVullen}
+        alleenAanTeVullen={alleenAanTeVullen}
+        onAlleenAanTeVullen={setGekozenAanvullen}
       />
 
       <p className="resultaat" aria-live="polite">
@@ -230,6 +288,7 @@ export default function App() {
               onClick={() => {
                 setGekozenAlliantie([])
                 setGekozenThema([])
+                setGekozenAanvullen(false)
               }}
             >
               Filters wissen
@@ -238,7 +297,7 @@ export default function App() {
         )}
       </p>
 
-      <ItemList items={zichtbaar} weergave={weergave} onOpen={navigeer} gekozen={gekozen} onWissel={wissel} />
+      <ItemList items={zichtbaar} weergave={weergave} onOpen={openen} gekozen={gekozen} onWissel={wissel} />
         </>
       )}
 
@@ -246,13 +305,31 @@ export default function App() {
         <Detail
           sleutel={rol?.id ?? personage?.id ?? ''}
           titelId="detail-titel"
-          onSluit={() => navigeer(HREF_LIJST)}
+          onSluit={sluitDetail}
+          onTerug={terug}
           inLijst={gekozen.has(rol?.id ?? personage?.id ?? '')}
           onWissel={() => wissel(rol?.id ?? personage?.id ?? '')}
         >
-          {rol && <RolDetail rol={rol} onOpen={navigeer} />}
-          {personage && <PersonageDetail personage={personage} onOpen={navigeer} />}
+          {rol && <RolDetail rol={rol} onOpen={openen} />}
+          {personage && <PersonageDetail personage={personage} onOpen={openen} />}
+          <p className="voorstel-link">
+            Klopt er iets niet?{' '}
+            <button
+              type="button"
+              className="link-knop"
+              onClick={() => {
+                const id = rol?.id ?? personage?.id ?? ''
+                sluitDetail()
+                setVoorstel(id)
+              }}
+            >
+              Stel een wijziging voor
+            </button>
+          </p>
         </Detail>
+      )}
+      {voorstel !== null && (
+        <VoorstelDialoog key={voorstel} startDoel={voorstel || undefined} onSluit={() => setVoorstel(null)} />
       )}
     </div>
   )

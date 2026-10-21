@@ -2,7 +2,7 @@ import { variantenPerRol } from '../lib/items'
 import { isGewoneKlik } from '../lib/route'
 import type { Rol } from '../types'
 import { AllianceBadge } from './AllianceBadge'
-import { Sectie } from './Sectie'
+import { AanTeVullen, Sectie } from './Sectie'
 
 interface Props {
   rol: Rol
@@ -18,6 +18,7 @@ export function RolDetail({ rol, onOpen }: Props) {
         <p className="item-meta">
           Algemene rol <AllianceBadge alliantie={rol.alliantie} />
         </p>
+        <AanTeVullen velden={rol.aanTeVullen} />
       </header>
       <Sectie titel="Omschrijving" tekst={rol.omschrijving} />
       <Sectie titel="Rolkrachten" tekst={rol.krachten} />

@@ -5,13 +5,15 @@ interface Props {
   sleutel: string
   titelId: string
   onSluit: () => void
+  /** Terug naar het vorige venster; sluit het venster als er geen vorige is. */
+  onTerug: () => void
   /** Staat dit item in 'Mijn lijst'? */
   inLijst: boolean
   onWissel: () => void
   children: ReactNode
 }
 
-export function Detail({ sleutel, titelId, onSluit, inLijst, onWissel, children }: Props) {
+export function Detail({ sleutel, titelId, onSluit, onTerug, inLijst, onWissel, children }: Props) {
   const ref = useRef<HTMLDialogElement>(null)
 
   useEffect(() => {
@@ -46,6 +48,9 @@ export function Detail({ sleutel, titelId, onSluit, inLijst, onWissel, children 
     >
       <div className="detail-balk">
         <span className="balk-acties">
+          <button type="button" className="sluit terug" onClick={onTerug} aria-label="Terug">
+            ←
+          </button>
           <KopieerLink />
           <button type="button" className={`chip${inLijst ? ' actief' : ''}`} aria-pressed={inLijst} onClick={onWissel}>
             {inLijst ? 'In mijn lijst' : 'Voeg toe aan mijn lijst'}
